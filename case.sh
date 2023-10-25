@@ -31,7 +31,7 @@ case $value in
        sudo sh install-docker.sh 
     fi
     echo "the script is installed add the ubuntu user to docker group"
-    usermod -aG docker ubuntu 
+    sudo usermod -aG docker ubuntu 
     echo "exit and relogin to your machine "
     ;;
 esac
